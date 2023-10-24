@@ -6,6 +6,7 @@ import Layout from './Layout.jsx'
 import Home from './Home.jsx'
 import Login from './Login.jsx'
 import Register from './Register.jsx';
+import Search from './Search';
 
 // const router = createBrowserRouter([
 //   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
     <Route path='' element={<Home/>}/>
     <Route path='Login' element={<Login/>}/>
     <Route path='Register' element={<Register/>}/>
+    <Route path='Search' element={<Search/>}/>
     </Route>
   )
 )
