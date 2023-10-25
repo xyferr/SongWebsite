@@ -1,8 +1,8 @@
 const express = require("express");
-const morgan = require("morgan");
 const cors = require("cors");
-const colors = require("colors");
+const morgan = require("morgan");
 const dotenv = require("dotenv");
+const colors = require("colors");
 const connectDb = require("./config/connectDb");
 
 dotenv.config();
@@ -12,14 +12,23 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("<h1>hello</h1>");
-});
 
-const PORT = 8000 || process.env.PORT;
+
+
+app.use("/", require("./routes/userRoute"));
+
+app.use(
+  cors({
+    origin: "http://localhost:5175",
+    credentials: true,
+  })
+);
+
+
+
+const PORT =   process.env.PORT || 8000;
 
 app.listen(PORT, () => {
-  console.log(`server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

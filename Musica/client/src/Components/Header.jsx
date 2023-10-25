@@ -1,4 +1,5 @@
-import {Link} from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
 import logo from "./Images/MUSICA1.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -20,7 +21,7 @@ const Header = () => {
              <Link to="/">
                 <div className='text-white font-medium'>HOME</div>
              </Link>
-             <Link to="/Login">
+             <Link to="/login">
                 <div className='text-black pr-3 pl-3 pt-2 pb-2 bg-white rounded-2xl font-medium'>LOGIN</div>
              </Link>
            </div>
