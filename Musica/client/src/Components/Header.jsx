@@ -16,7 +16,7 @@ const Header = () => {
            <div className="nav-right flex items-center w-3/5 justify-evenly">
              <div className="search flex items-center">
                 <FontAwesomeIcon className='text-center bg-white h-10 w-5 rounded-s-3xl pl-4' icon={faMagnifyingGlass} />
-                <input className='h-10 rounded-e-3xl w-96 border-none outline-none pl-1' type="text" />
+                <Link to="/Search"><input className='h-10 rounded-e-3xl w-96 border-none outline-none pl-1' type="text" /></Link>
              </div>
              <Link to="/">
                 <div className='text-white font-medium'>HOME</div>
