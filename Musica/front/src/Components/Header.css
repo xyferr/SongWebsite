@@ -1,0 +1,40 @@
+.logo1{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .logo1{
+        display: block;
+        width: 10vw;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    div.swiper-button-next, div.swiper-button-prev{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
