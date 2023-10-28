@@ -12,22 +12,11 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(express.json());
-
-
-
+app.use(cors());
 
 app.use("/", require("./routes/userRoute"));
 
-app.use(
-  cors({
-    origin: "http://localhost:5175",
-    credentials: true,
-  })
-);
-
-
-
-const PORT =   process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

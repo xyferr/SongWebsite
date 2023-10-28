@@ -27,7 +27,6 @@ import img17 from "./Components/Images/Slider-2/17.webp"
 import img18 from "./Components/Images/Slider-2/18.webp"
 
 
-
 const Search1 = () => {
   return (
     <>
@@ -75,3 +74,4 @@ const Search1 = () => {
 }
 
 export default Search1
+
