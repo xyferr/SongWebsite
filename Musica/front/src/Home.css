@@ -17,9 +17,23 @@ html,body{
     background: transparent;
 }
 
+.main{
+    background-color: #0D0F12;
+}
+
+.range{
+    height: 2px;
+}
+
 .new-release img{
     height: 28vh;
     border-radius: 0.9vw;
+}
+
+.volume{
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
 }
 
 
