@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import Header from './Header.css'
 
-const Header1 = () => {
+const Header1 = ({song,current}) => {
   return (
     <>
         <div className="main h-20 bg-black text-black w-full flex items-center justify-evenly sm:w-full sticky top-0 z-20">
@@ -20,8 +20,8 @@ const Header1 = () => {
                 <FontAwesomeIcon className='text-center bg-white h-10 w-5 rounded-s-3xl pl-3 sm:block hidden' icon={faMagnifyingGlass} />
                 <Link to="/Search"><input className='h-10 rounded-e-3xl w-48 sm:block hidden border-none outline-none pl-1 sm:w-96' type="text" /></Link>
              </div>
-             <Link to="/">
-                <div className='text-white font-medium sm:block hidden'>HOME</div>
+             <Link to="/Favourite">
+                <div className='text-white font-medium sm:block hidden'>MY MUSIC</div>
              </Link>
              <Link to="/Login">
                 <div className='text-black pr-3 pl-3 pt-2 pb-2 bg-white rounded-2xl font-medium'>LOGIN</div>
